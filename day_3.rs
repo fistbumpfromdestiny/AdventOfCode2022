@@ -11,7 +11,6 @@ fn main() {
     let lines: Vec<&str> = file.lines().collect();
 
     let mut score = 0;
-    let mut score_part_2 = 0;
 
     for line in file.lines().map(|l| l.trim().split_at(l.len() / 2)) {
         for char in line.0.chars() {
